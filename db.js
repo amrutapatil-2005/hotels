@@ -27,6 +27,7 @@
 // module.exports=db;
 const mongoose = require("mongoose");
 
+// const mongoURL='mongodb+srv://amrutapatil070921:Amruta1234@cluster0.9uww1ce.mongodb.net/'
 // MongoDB URL
 const mongoURL = 'mongodb://localhost:27017/hotels';
 
@@ -35,12 +36,13 @@ mongoose.connect(mongoURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+// mongoose.connect(mongoURL);
 
 const db = mongoose.connection;
 
 // Event listeners
 db.on('connected', () => {
-  console.log("Database is connected");
+  console.log("Database is connected to server");
 });
 
 db.on('disconnected', () => {

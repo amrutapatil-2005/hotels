@@ -39,6 +39,7 @@
 const fs = require('fs');
 const notes = require("./notes.js");
 const os = require('os');
+// require('dotenv').config();
 const port = process.env.PORT || 4000;
 const express = require('express');
 const app = express();

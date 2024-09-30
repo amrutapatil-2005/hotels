@@ -47,7 +47,7 @@ const db = require("./db");
 const Person = require("./models/person.js");
 const Menu = require("./models/menu.js");  // Capitalized Person (model name)
 const bodyParser = require("body-parser");
-const { useParams } = require('react-router-dom');
+
 
 app.use(bodyParser.json());  // Parse incoming request bodies in JSON format
 
